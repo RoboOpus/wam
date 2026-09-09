@@ -1,0 +1,286 @@
+schema_version: "0.1"
+updated_at: "2026-09-08"
+notes:
+  - "This is a hand-curated seed, not an exhaustive bibliography."
+  - "review_status=verified means bibliographic metadata was checked; it does not mean the paper was fully reviewed."
+
+papers:
+  - id: "arxiv:1610.00696"
+    title: "Deep Visual Foresight for Planning Robot Motion"
+    year: 2016
+    bucket: "world-model-foundation"
+    wam_relation: "precursor"
+    coupling: "cascaded"
+    future_substrate: "pixel"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/1610.00696"
+
+  - id: "arxiv:1803.10122"
+    title: "World Models"
+    year: 2018
+    bucket: "world-model-foundation"
+    wam_relation: "world-model-for-policy"
+    coupling: "modular"
+    future_substrate: "latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/1803.10122"
+
+  - id: "arxiv:1811.04551"
+    title: "Learning Latent Dynamics for Planning from Pixels"
+    year: 2018
+    bucket: "world-model-foundation"
+    wam_relation: "world-model-for-policy"
+    coupling: "planning-over-model"
+    future_substrate: "latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/1811.04551"
+
+  - id: "arxiv:1911.08265"
+    title: "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"
+    year: 2019
+    bucket: "world-model-foundation"
+    wam_relation: "world-model-for-policy"
+    coupling: "planning-over-model"
+    future_substrate: "task-relevant-latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/1911.08265"
+
+  - id: "arxiv:1912.01603"
+    title: "Dream to Control: Learning Behaviors by Latent Imagination"
+    year: 2019
+    bucket: "world-model-foundation"
+    wam_relation: "world-model-for-policy"
+    coupling: "policy-learning-in-model"
+    future_substrate: "latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/1912.01603"
+
+  - id: "arxiv:2203.04955"
+    title: "Temporal Difference Learning for Model Predictive Control"
+    year: 2022
+    bucket: "world-model-foundation"
+    wam_relation: "world-model-for-policy"
+    coupling: "planning-over-model"
+    future_substrate: "task-oriented-latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2203.04955"
+
+  - id: "arxiv:2301.04104"
+    title: "Mastering Diverse Domains through World Models"
+    year: 2023
+    bucket: "world-model-foundation"
+    wam_relation: "world-model-for-policy"
+    coupling: "policy-learning-in-model"
+    future_substrate: "latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2301.04104"
+
+  - id: "arxiv:2302.00111"
+    title: "Learning Universal Policies via Text-Guided Video Generation"
+    year: 2023
+    bucket: "wam-precursor"
+    wam_relation: "precursor"
+    coupling: "cascaded"
+    future_substrate: "pixel"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2302.00111"
+
+  - id: "arxiv:2310.08576"
+    title: "Learning to Act from Actionless Videos through Dense Correspondences"
+    year: 2023
+    bucket: "wam-precursor"
+    wam_relation: "precursor"
+    coupling: "cascaded-geometric-extraction"
+    future_substrate: "pixel-and-correspondence"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2310.08576"
+
+  - id: "arxiv:2310.10625"
+    title: "Video Language Planning"
+    year: 2023
+    bucket: "wam-precursor"
+    wam_relation: "precursor"
+    coupling: "cascaded-planning"
+    future_substrate: "pixel"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2310.10625"
+
+  - id: "arxiv:2312.13139"
+    title: "Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation"
+    year: 2023
+    bucket: "joint-wam-precursor"
+    wam_relation: "precursor"
+    coupling: "joint-autoregressive"
+    future_substrate: "pixel-latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2312.13139"
+
+  - id: "arxiv:2406.16862"
+    title: "Dreamitate: Real-World Visuomotor Policy Learning via Video Generation"
+    year: 2024
+    bucket: "wam-precursor"
+    wam_relation: "precursor"
+    coupling: "cascaded-geometric-extraction"
+    future_substrate: "pixel"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2406.16862"
+
+  - id: "arxiv:2407.15208"
+    title: "Flow as the Cross-Domain Manipulation Interface"
+    year: 2024
+    bucket: "wam-precursor"
+    wam_relation: "precursor"
+    coupling: "cascaded-flow"
+    future_substrate: "flow"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2407.15208"
+
+  - id: "arxiv:2411.18179"
+    title: "Prediction with Action: Visual Policy Learning via Joint Denoising Process"
+    year: 2024
+    bucket: "joint-wam-precursor"
+    wam_relation: "precursor"
+    coupling: "joint-diffusion"
+    future_substrate: "pixel-latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2411.18179"
+
+  - id: "arxiv:2504.02792"
+    title: "Unified World Models: Coupling Video and Action Diffusion for Pretraining on Large Robotic Datasets"
+    year: 2025
+    bucket: "joint-wam"
+    wam_relation: "core"
+    coupling: "joint-diffusion"
+    future_substrate: "pixel-latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2504.02792"
+
+  - id: "arxiv:2506.21539"
+    title: "WorldVLA: Towards Autoregressive Action World Model"
+    year: 2025
+    bucket: "joint-wam"
+    wam_relation: "core"
+    coupling: "joint-autoregressive"
+    future_substrate: "pixel-latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2506.21539"
+
+  - id: "arxiv:2601.16163"
+    title: "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning"
+    year: 2026
+    bucket: "frontier-wam"
+    wam_relation: "core"
+    coupling: "joint-diffusion-and-planning"
+    future_substrate: "latent-frame-and-value"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2601.16163"
+
+  - id: "arxiv:2601.21998"
+    title: "Causal World Modeling for Robot Control"
+    year: 2026
+    bucket: "frontier-wam"
+    wam_relation: "core"
+    coupling: "joint-autoregressive-diffusion"
+    future_substrate: "shared-vision-action-latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2601.21998"
+
+  - id: "arxiv:2602.10098"
+    title: "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model"
+    year: 2026
+    bucket: "frontier-wam"
+    wam_relation: "core"
+    coupling: "auxiliary-latent-prediction"
+    future_substrate: "jepa-latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2602.10098"
+
+  - id: "arxiv:2602.15922"
+    title: "World Action Models are Zero-shot Policies"
+    year: 2026
+    bucket: "frontier-wam"
+    wam_relation: "core"
+    coupling: "joint-video-action-diffusion"
+    future_substrate: "pixel-latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2602.15922"
+
+  - id: "arxiv:2603.16666"
+    title: "Fast-WAM: Do World Action Models Need Test-time Future Imagination?"
+    year: 2026
+    bucket: "frontier-wam"
+    wam_relation: "core"
+    coupling: "training-time-video-cotraining"
+    future_substrate: "latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2603.16666"
+
+  - id: "arxiv:2604.14732"
+    title: "World-Value-Action Model: Implicit Planning for Vision-Language-Action Systems"
+    year: 2026
+    bucket: "frontier-wam"
+    wam_relation: "core"
+    coupling: "latent-world-value-action"
+    future_substrate: "trajectory-latent-and-value"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2604.14732"
+
+  - id: "arxiv:2605.00080"
+    title: "World Model for Robot Learning: A Comprehensive Survey"
+    year: 2026
+    bucket: "survey"
+    wam_relation: "survey"
+    coupling: "not-applicable"
+    future_substrate: "not-applicable"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2605.00080"
+
+  - id: "arxiv:2605.12090"
+    title: "World Action Models: The Next Frontier in Embodied AI"
+    year: 2026
+    bucket: "survey"
+    wam_relation: "survey"
+    coupling: "not-applicable"
+    future_substrate: "not-applicable"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2605.12090"
+
+  - id: "arxiv:2606.01027"
+    title: "tau_0-WM: A Unified Video-Action World Model for Robotic Manipulation"
+    year: 2026
+    bucket: "frontier-wam"
+    wam_relation: "core"
+    coupling: "joint-policy-and-action-conditioned-simulator"
+    future_substrate: "multi-view-video-latent-and-progress"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2606.01027"
+
+  - id: "arxiv:2606.05254"
+    title: "Flash-WAM: Modality-Aware Distillation for World Action Models"
+    year: 2026
+    bucket: "frontier-wam"
+    wam_relation: "core"
+    coupling: "distilled-joint-diffusion"
+    future_substrate: "video-and-action-latent"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2606.05254"
+
+  - id: "arxiv:2606.20781"
+    title: "World Action Models: A Survey"
+    year: 2026
+    bucket: "survey"
+    wam_relation: "survey"
+    coupling: "not-applicable"
+    future_substrate: "not-applicable"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2606.20781"
+
+  - id: "arxiv:2607.00836"
+    title: "From World Models to World Action Models: A Concise Tutorial for Robotics"
+    year: 2026
+    bucket: "survey"
+    wam_relation: "tutorial"
+    coupling: "not-applicable"
+    future_substrate: "not-applicable"
+    review_status: "verified"
+    paper_url: "https://arxiv.org/abs/2607.00836"

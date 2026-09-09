@@ -1,0 +1,70 @@
+# WAM · RoboOpus Research Index
+
+RoboOpus 的 World Action Model 研究索引。第一版不追求规模，先用两篇立场互补的论文建立可追溯、可审阅的知识页：
+
+- **DreamZero**：推理时显式生成未来，并联合预测动作。
+- **Fast-WAM**：训练时保留视频共训，推理时跳过未来生成。
+
+目标项目站：<https://roboopus.github.io/wam/>  
+目标仓库：<https://github.com/RoboOpus/wam>
+
+本项目不会创建、修改或部署 `RoboOpus/RoboOpus.github.io`。
+
+## 当前页面
+
+- 首页：研究问题、两篇种子论文和对照判断
+- DreamZero：方法路径、作者报告证据、限制与复现快照
+- Fast-WAM：训练/推理解耦、受控消融、限制与复现快照
+
+每篇知识页都区分：
+
+1. 论文与项目页中的可核验事实；
+2. 作者团队报告的结果和主张；
+3. RoboOpus 的编辑判断；
+4. 尚未完成的独立复现。
+
+## 本地运行
+
+需要 Node.js 22.13 或更高版本。
+
+```bash
+npm install
+npm run dev
+```
+
+本地地址为 `http://localhost:3000/wam/`。
+
+## 构建与发布
+
+```bash
+npm run lint
+npm run build
+```
+
+`vinext build` 使用 `output: "export"` 生成纯静态站到 `dist/client/`，随后 `postbuild` 会整理 `/wam` 静态资源和目录路由。推送到 `main` 后，GitHub Actions 会把该目录部署为 `/wam/` 项目站。
+
+首次创建仓库后，需要在 GitHub 仓库的 **Settings → Pages → Build and deployment** 中选择 **GitHub Actions**。
+
+## 内容资料
+
+- [WAM 范围、边界与分类](content/00-WAM范围与分类.md)
+- [经典论文阅读路线](content/papers/01-经典论文阅读路线.md)
+- [2026 arXiv 前沿论文池](content/papers/02-2026-arXiv前沿论文.md)
+- [机器可读论文种子](data/papers.seed.yaml)
+- [自生长知识库架构方案](planning/RoboOpus_自生长知识库_架构方案.md)
+- [参考案例与模板调研](planning/参考案例与模板调研.md)
+
+## 设计来源
+
+页面借鉴的是信息组织方法，不复制第三方文字、图像或品牌资产：
+
+- [OpenMOSS/Awesome-WAM](https://github.com/OpenMOSS/Awesome-WAM)：WAM taxonomy、paper blog 与 leaderboard 思路
+- [world-action-models/awesome-world-action-models](https://github.com/world-action-models/awesome-world-action-models)：WAM 操作化定义与分类轴
+- [ImChong/Robotics_Notebooks](https://github.com/ImChong/Robotics_Notebooks)：路线、互链知识节点与来源追踪
+- [DreamZero 项目页](https://dreamzero0.github.io/) 与 [Fast-WAM 项目页](https://yuantianyuan01.github.io/FastWAM/)：论文页的研究问题—方法—证据结构
+
+更完整的案例统计见 [参考案例与模板调研](planning/参考案例与模板调研.md)。
+
+## 内容许可与引用
+
+站内中文分析为原创整理；论文、项目、代码和性能数字均回链其原始来源。第三方论文、图片、视频、代码与数据仍适用各自许可证和版权条款。
