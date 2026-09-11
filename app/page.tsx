@@ -7,6 +7,7 @@ import {
   MoveRight,
 } from 'lucide-react';
 import { SiteHeader } from '@/components/site-header';
+import { formatRadarDate, radarPapers, radarSnapshot } from '@/lib/arxiv';
 import { paperList } from '@/lib/papers';
 
 const basePath = '/wam';
@@ -21,7 +22,7 @@ export default function Home() {
       <section className="question-board" id="top">
         <div className="question-kicker">
           <span>RESEARCH QUESTION / 001</span>
-          <span>更新于 2026-09-09</span>
+          <span>知识页更新于 2026-09-11</span>
         </div>
         <div className="question-grid">
           <div>
@@ -41,6 +42,46 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </section>
+
+      <section className="radar-preview" id="radar">
+        <div className="radar-preview-heading">
+          <div>
+            <span>ARXIV RADAR / CANDIDATE QUEUE</span>
+            <h2>先发现，再核验</h2>
+          </div>
+          <div className="radar-preview-note">
+            <p>
+              每天 08:00（北京时间）检索机器人世界模型与 VLA。相关度排序只负责缩小阅读范围，
+              所有结果先进入候选队列，不自动冒充已审阅知识。
+            </p>
+            <a className="text-link" href={`${basePath}/radar/`}>
+              打开论文雷达 <ArrowDownRight aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+
+        <div className="radar-mini-grid">
+          {radarPapers.slice(0, 3).map((paper) => (
+            <article className="radar-mini-card" key={paper.id}>
+              <div>
+                <span className="radar-score">相关度 {paper.relevanceScore}</span>
+                <span className="status"><CircleDot /> 待人工审阅</span>
+              </div>
+              <h3>{paper.title}</h3>
+              <p>{paper.authors.slice(0, 3).join(' · ')}{paper.authors.length > 3 ? ' 等' : ''}</p>
+              <footer>
+                <span>{formatRadarDate(paper.published)}</span>
+                <a href={paper.url} target="_blank" rel="noreferrer">
+                  arXiv <ArrowUpRight aria-hidden="true" />
+                </a>
+              </footer>
+            </article>
+          ))}
+        </div>
+        <p className="radar-sync-line">
+          当前收录 {radarPapers.length} 篇候选 · 数据变化于 {formatRadarDate(radarSnapshot.generatedAt)}
+        </p>
       </section>
 
       <section className="paper-section" id="papers">
@@ -116,7 +157,7 @@ export default function Home() {
       <section className="method-strip" id="method">
         <span>RoboOpus method</span>
         <p>原论文事实 → 作者主张 → 对照阅读 → 编辑判断 → 复现状态</p>
-        <span>v0.1 / 两篇种子</span>
+        <span>v0.2 / {radarPapers.length} 候选 + {paperList.length} 精读</span>
       </section>
     </main>
   );

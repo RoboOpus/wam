@@ -13,6 +13,7 @@ export function SiteHeader({ compact = false }: { compact?: boolean }) {
         </span>
       </a>
       <nav aria-label="主导航">
+        <a href={`${basePath}/radar/`}>雷达</a>
         <a href={`${basePath}/#papers`}>论文</a>
         <a href={`${basePath}/#thesis`}>争论</a>
         <a href={`${basePath}/#method`}>方法</a>

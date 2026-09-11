@@ -7,7 +7,7 @@ World Action Model（WAM）轻量知识库种子工程。
 - GitHub 普通仓库：`RoboOpus/wam`
 - 项目站：`https://roboopus.github.io/wam/`
 - 禁止目标：不创建、不修改、不部署 `RoboOpus/RoboOpus.github.io`
-- 当前状态：首版项目站和两篇详情页已部署至 `https://roboopus.github.io/wam/`
+- 当前状态：两篇精读页与 arXiv Radar v0.2 已完成；候选池每日增量更新
 
 ## 当前目标
 
@@ -16,14 +16,16 @@ World Action Model（WAM）轻量知识库种子工程。
 1. 形成可执行的 WAM 纳入标准，避免把普通 VLA、纯视频生成器和通用模拟器混为一谈。
 2. 用两套主流 taxonomy 交叉组织论文。
 3. 建立 World Model → 早期 WAM → 2026 WAM 的阅读路线。
-4. 把人工精选内容和机器可读元数据同时保存，为后续 arXiv 日更做准备。
+4. 把人工精选内容和机器可读元数据同时保存，并以候选池承接 arXiv 日更。
 
 ## 内容入口
 
 - [WAM 范围、边界与分类](content/00-WAM范围与分类.md)
 - [经典论文阅读路线](content/papers/01-经典论文阅读路线.md)
 - [2026 arXiv 前沿论文池](content/papers/02-2026-arXiv前沿论文.md)
+- [arXiv 雷达工作流](content/papers/03-arXiv雷达工作流.md)
 - [机器可读论文种子](data/papers.seed.yaml)
+- [机器生成候选池](data/arxiv/papers.json)
 
 ## 内容状态
 
@@ -52,7 +54,7 @@ DreamZero 与 Fast-WAM 已完成结构化精读页；两者均尚未完成独立
 接下来再做这些工程化工作：
 
 - 增加标准论文卡模板和字段校验；
-- 接入 arXiv API，自动生成候选列表但不自动发布；
-- 首次发布后核验 GitHub Pages 的 `/wam/` 子路径；
 - 增加链接检查和内容 schema 校验；
-- 所有自动更新通过 Pull Request 审核。
+- 从候选池中人工选择下一批 WAM 论文完成结构化精读；
+- 扩充 World Model → 早期 WAM → 近期 WAM 的经典阅读时间线；
+- 候选元数据可以自动更新；升级为 `reviewed` 或正式知识页仍需人工核验。

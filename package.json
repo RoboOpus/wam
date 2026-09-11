@@ -9,8 +9,9 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "postbuild": "node scripts/prepare-github-pages.mjs",
+    "papers:fetch": "node scripts/fetch-arxiv.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
-    "lint": "oxlint app components/paper-detail.tsx components/site-header.tsx lib",
+    "lint": "oxlint app components/paper-detail.tsx components/site-header.tsx lib scripts",
     "format": "oxfmt"
   },
   "dependencies": {

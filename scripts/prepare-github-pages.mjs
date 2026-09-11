@@ -29,14 +29,14 @@ function makeStaticHtml(sourcePath, targetPath = sourcePath) {
 makeStaticHtml(join(outputRoot, 'index.html'));
 makeStaticHtml(join(outputRoot, '404.html'));
 
-for (const slug of ['dreamzero', 'fast-wam']) {
-  const routeFile = join(outputRoot, 'papers', `${slug}.html`);
+for (const route of ['radar', 'papers/dreamzero', 'papers/fast-wam']) {
+  const routeFile = join(outputRoot, `${route}.html`);
   if (!existsSync(routeFile)) {
-    throw new Error(`Static paper page was not generated: ${slug}`);
+    throw new Error(`Static route was not generated: ${route}`);
   }
 
   makeStaticHtml(routeFile);
-  makeStaticHtml(routeFile, join(outputRoot, 'papers', slug, 'index.html'));
+  makeStaticHtml(routeFile, join(outputRoot, route, 'index.html'));
 }
 
 console.log('Prepared GitHub Pages artifact with /wam assets and clean directory routes.');

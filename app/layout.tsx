@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://roboopus.github.io/wam/'),
   title: 'WAM — RoboOpus Research Index',
   description:
-    'RoboOpus 的 World Action Model 研究索引：从两篇论文开始，追踪未来预测如何进入机器人动作路径。',
+    'RoboOpus 的 World Action Model 研究索引：每日 arXiv 论文雷达、可追溯精读与机器人动作路径对照。',
   alternates: {
     canonical: 'https://roboopus.github.io/wam/',
   },

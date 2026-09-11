@@ -1,6 +1,6 @@
 # WAM · RoboOpus Research Index
 
-RoboOpus 的 World Action Model 研究索引。第一版不追求规模，先用两篇立场互补的论文建立可追溯、可审阅的知识页：
+RoboOpus 的 World Action Model 研究索引。项目从两篇立场互补的精读论文出发，逐步建立“自动发现、人工核验、可追溯发布”的知识流水线：
 
 - **DreamZero**：推理时显式生成未来，并联合预测动作。
 - **Fast-WAM**：训练时保留视频共训，推理时跳过未来生成。
@@ -12,6 +12,7 @@ RoboOpus 的 World Action Model 研究索引。第一版不追求规模，先用
 
 ## 当前页面
 
+- arXiv Radar：每日增量发现、相关度排序和人工审阅入口
 - 首页：研究问题、两篇种子论文和对照判断
 - DreamZero：方法路径、作者报告证据、限制与复现快照
 - Fast-WAM：训练/推理解耦、受控消融、限制与复现快照
@@ -34,6 +35,14 @@ npm run dev
 
 本地地址为 `http://localhost:3000/wam/`。
 
+手动刷新 arXiv 候选池：
+
+```bash
+npm run papers:fetch
+```
+
+脚本只保存题名、作者、日期、分类和来源链接，不复制摘要；已有人工审阅状态会在后续增量更新中保留。
+
 ## 构建与发布
 
 ```bash
@@ -43,6 +52,8 @@ npm run build
 
 `vinext build` 使用 `output: "export"` 生成纯静态站到 `dist/client/`，随后 `postbuild` 会整理 `/wam` 静态资源和目录路由。推送到 `main` 后，GitHub Actions 会把该目录部署为 `/wam/` 项目站。
 
+`Refresh arXiv Radar` 工作流每天北京时间 08:00 运行。只有候选数据发生变化时才提交并重新部署；所有新条目默认标记为 `candidate`，不会自动升级为已核验知识。
+
 首次创建仓库后，需要在 GitHub 仓库的 **Settings → Pages → Build and deployment** 中选择 **GitHub Actions**。
 
 ## 内容资料
@@ -50,6 +61,7 @@ npm run build
 - [WAM 范围、边界与分类](content/00-WAM范围与分类.md)
 - [经典论文阅读路线](content/papers/01-经典论文阅读路线.md)
 - [2026 arXiv 前沿论文池](content/papers/02-2026-arXiv前沿论文.md)
+- [arXiv 雷达工作流](content/papers/03-arXiv雷达工作流.md)
 - [机器可读论文种子](data/papers.seed.yaml)
 - [自生长知识库架构方案](planning/RoboOpus_自生长知识库_架构方案.md)
 - [参考案例与模板调研](planning/参考案例与模板调研.md)
