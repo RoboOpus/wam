@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { SiteHeader } from '@/components/site-header';
 import { formatRadarDate, radarPapers, radarSnapshot } from '@/lib/arxiv';
+import { landscapeEntryCount, landscapeOverview } from '@/lib/landscape';
 import { paperList } from '@/lib/papers';
 
 const basePath = '/wam';
@@ -19,28 +20,56 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      <section className="question-board" id="top">
+      <section className="question-board landscape-home-hero" id="top">
         <div className="question-kicker">
-          <span>RESEARCH QUESTION / 001</span>
-          <span>知识页更新于 2026-09-11</span>
+          <span>WAM LANDSCAPE / V0.3</span>
+          <span>先做广度 · 再做深度</span>
         </div>
         <div className="question-grid">
           <div>
             <p className="eyebrow">WORLD ACTION MODELS</p>
             <h1>
-              WAM 是否必须在
-              <em>推理时想象未来？</em>
+              先建领域地图，
+              <em>再逐步精读。</em>
             </h1>
           </div>
           <div className="question-aside">
             <p>
-              用两篇立场互补的论文建立第一组知识样本：一篇把未来视频变成策略核心，
-              一篇把显式想象从部署路径中移除。
+              这里不是一张越堆越长的论文清单。先建立定义、时间线、方法、数据、开源生态和研究问题等一级入口，
+              再把可靠内容逐层加深。
             </p>
-            <a className="text-link" href="#thesis">
-              查看对照结论 <ArrowDownRight aria-hidden="true" />
+            <a className="text-link" href={`${basePath}/landscape/`}>
+              进入完整领域地图 <ArrowDownRight aria-hidden="true" />
             </a>
           </div>
+        </div>
+        <dl className="landscape-hero-stats">
+          <div><dt>{landscapeOverview.length}</dt><dd>一级板块</dd></div>
+          <div><dt>{landscapeEntryCount}</dt><dd>首批索引位</dd></div>
+          <div><dt>{radarPapers.length}</dt><dd>前沿候选</dd></div>
+          <div><dt>{paperList.length}</dt><dd>精读样例</dd></div>
+        </dl>
+      </section>
+
+      <section className="domain-map-section" id="landscape">
+        <div className="section-heading">
+          <span>LEVEL 1 / FIELD MAP</span>
+          <h2>十个入口，先把疆域画出来</h2>
+          <p>数字代表当前规划的首批索引位，不等于完成度；每个入口都会继续补充来源、状态与交叉关系。</p>
+        </div>
+        <div className="domain-map-grid">
+          {landscapeOverview.map((section) => (
+            <a href={`${basePath}/landscape/#${section.id}`} className="domain-map-card" key={section.id}>
+              <div>
+                <span>{section.index}</span>
+                <span>{section.entryCount.toString().padStart(2, '0')} ENTRIES</span>
+              </div>
+              <p>{section.english}</p>
+              <h3>{section.title}</h3>
+              <small>{section.description}</small>
+              <MoveRight aria-hidden="true" />
+            </a>
+          ))}
         </div>
       </section>
 
@@ -157,7 +186,7 @@ export default function Home() {
       <section className="method-strip" id="method">
         <span>RoboOpus method</span>
         <p>原论文事实 → 作者主张 → 对照阅读 → 编辑判断 → 复现状态</p>
-        <span>v0.2 / {radarPapers.length} 候选 + {paperList.length} 精读</span>
+          <span>v0.3 / {landscapeOverview.length} 板块 + {radarPapers.length} 候选 + {paperList.length} 精读</span>
       </section>
     </main>
   );

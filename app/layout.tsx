@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://roboopus.github.io/wam/'),
   title: 'WAM — RoboOpus Research Index',
   description:
-    'RoboOpus 的 World Action Model 研究索引：每日 arXiv 论文雷达、可追溯精读与机器人动作路径对照。',
+    'RoboOpus 的 World Action Model 领域地图：定义、时间线、方法、论文雷达、数据、代码与开放问题。',
   alternates: {
     canonical: 'https://roboopus.github.io/wam/',
   },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'WAM — RoboOpus Research Index',
-    description: '未来预测，应该出现在机器人动作路径的哪里？',
+    description: '先建 WAM 领域地图，再逐步精读与复现。',
     type: 'website',
     url: 'https://roboopus.github.io/wam/',
     images: ['https://roboopus.github.io/wam/og.png'],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'WAM — RoboOpus Research Index',
-    description: '未来预测，应该出现在机器人动作路径的哪里？',
+    description: '先建 WAM 领域地图，再逐步精读与复现。',
     images: ['https://roboopus.github.io/wam/og.png'],
   },
 };

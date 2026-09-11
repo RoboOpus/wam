@@ -1,9 +1,8 @@
 # WAM · RoboOpus Research Index
 
-RoboOpus 的 World Action Model 研究索引。项目从两篇立场互补的精读论文出发，逐步建立“自动发现、人工核验、可追溯发布”的知识流水线：
+RoboOpus 的 World Action Model 领域地图。项目先建立定义、时间线、方法、论文、数据、代码、生态和开放问题等一级入口，再逐步建立“自动发现、人工核验、可追溯发布”的知识流水线。
 
-- **DreamZero**：推理时显式生成未来，并联合预测动作。
-- **Fast-WAM**：训练时保留视频共训，推理时跳过未来生成。
+当前采用三层深度：L1 领域地图、L2 结构索引、L3 精读与复现。DreamZero 和 Fast-WAM 是 L3 的两个结构样例，不再承担首页的主叙事。
 
 目标项目站：<https://roboopus.github.io/wam/>  
 目标仓库：<https://github.com/RoboOpus/wam>
@@ -12,8 +11,9 @@ RoboOpus 的 World Action Model 研究索引。项目从两篇立场互补的精
 
 ## 当前页面
 
+- WAM 领域地图：10 个一级板块、61 个首批索引位
 - arXiv Radar：每日增量发现、相关度排序和人工审阅入口
-- 首页：研究问题、两篇种子论文和对照判断
+- 首页：领域入口、自动雷达和精读样例的总导航
 - DreamZero：方法路径、作者报告证据、限制与复现快照
 - Fast-WAM：训练/推理解耦、受控消融、限制与复现快照
 
@@ -59,6 +59,7 @@ npm run build
 ## 内容资料
 
 - [WAM 范围、边界与分类](content/00-WAM范围与分类.md)
+- [WAM 一级领域地图](content/01-一级领域地图.md)
 - [经典论文阅读路线](content/papers/01-经典论文阅读路线.md)
 - [2026 arXiv 前沿论文池](content/papers/02-2026-arXiv前沿论文.md)
 - [arXiv 雷达工作流](content/papers/03-arXiv雷达工作流.md)
