@@ -117,9 +117,9 @@ export const landscapeSections: LandscapeSection[] = [
   {
     id: 'methods',
     index: '03',
-    title: '架构与方法族',
-    english: 'Methods',
-    description: '按耦合方式、预测载体和世界信号用途组织方法，而非只按模型名罗列。',
+    title: '架构与技术路线',
+    english: 'Architectures',
+    description: '按耦合方式、预测载体和世界信号用途组织技术路线，而非只按模型名罗列。',
     entries: [
       {
         title: 'Cascaded / 级联式',
@@ -214,7 +214,7 @@ export const landscapeSections: LandscapeSection[] = [
     index: '05',
     title: 'Benchmark 与数据',
     english: 'Benchmarks',
-    description: '追踪任务套件、真实机器人数据和跨本体训练资源。',
+    description: '区分策略评测、世界模型评测、训练数据与评测基础设施。',
     entries: [
       {
         title: 'LIBERO',
@@ -264,6 +264,20 @@ export const landscapeSections: LandscapeSection[] = [
         status: '已索引',
         note: '面向可扩展双臂数据生成与具身智能评测的开放平台。',
         href: 'https://github.com/RoboTwin-Platform/RoboTwin',
+      },
+      {
+        title: 'RoboDojo',
+        kind: '仿真—真机基准',
+        status: '已索引',
+        note: '统一 42 个仿真任务与 18 个真机任务，从泛化、记忆、精度、长时序和开放指令五个维度评测通用操作策略。',
+        href: 'https://github.com/RoboDojo-Benchmark/RoboDojo',
+      },
+      {
+        title: 'RoboWM-Bench',
+        kind: '世界模型基准',
+        status: '已索引',
+        note: '把生成的操作视频转换为动作并在仿真中执行，检查视觉未来是否具有具身可执行性。',
+        href: 'https://github.com/fffstrong/RoboWM-Bench',
       },
     ],
   },
@@ -322,6 +336,13 @@ export const landscapeSections: LandscapeSection[] = [
         status: '相邻基础',
         note: '模块化机器人示范学习与基线复现实验框架。',
         href: 'https://github.com/ARISE-Initiative/robomimic',
+      },
+      {
+        title: 'XPolicyLab',
+        kind: '评测基础设施',
+        status: '已索引',
+        note: '以统一策略适配器连接 RoboDojo、RoboTwin 和真机部署，减少策略与环境之间的重复集成。',
+        href: 'https://github.com/XPolicyLab/XPolicyLab',
       },
     ],
   },

@@ -11,7 +11,7 @@ RoboOpus 的 World Action Model 领域地图。项目先建立定义、时间线
 
 ## 当前页面
 
-- WAM 领域地图：10 个一级板块、61 个首批索引位
+- WAM 领域地图：10 个一级板块、64 个首批索引位
 - arXiv Radar：每日增量发现、相关度排序和人工审阅入口
 - 首页：领域入口、自动雷达和精读样例的总导航
 - DreamZero：方法路径、作者报告证据、限制与复现快照
@@ -60,6 +60,7 @@ npm run build
 
 - [WAM 范围、边界与分类](content/00-WAM范围与分类.md)
 - [WAM 一级领域地图](content/01-一级领域地图.md)
+- [评测与数据版图](content/benchmarks/00-评测与数据版图.md)
 - [经典论文阅读路线](content/papers/01-经典论文阅读路线.md)
 - [2026 arXiv 前沿论文池](content/papers/02-2026-arXiv前沿论文.md)
 - [arXiv 雷达工作流](content/papers/03-arXiv雷达工作流.md)
