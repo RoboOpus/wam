@@ -7,7 +7,7 @@ World Action Model（WAM）轻量知识库种子工程。
 - GitHub 普通仓库：`RoboOpus/wam`
 - 项目站：`https://roboopus.github.io/wam/`
 - 禁止目标：不创建、不修改、不部署 `RoboOpus/RoboOpus.github.io`
-- 当前状态：本地项目站和两篇详情页已完成，等待创建远程仓库并部署
+- 当前状态：首版项目站和两篇详情页已部署至 `https://roboopus.github.io/wam/`
 
 ## 当前目标
 
