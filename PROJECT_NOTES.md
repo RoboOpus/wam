@@ -7,7 +7,7 @@ World Action Model（WAM）轻量知识库种子工程。
 - GitHub 普通仓库：`RoboOpus/wam`
 - 项目站：`https://roboopus.github.io/wam/`
 - 禁止目标：不创建、不修改、不部署 `RoboOpus/RoboOpus.github.io`
-- 当前状态：WAM 一级领域地图、28 篇种子论文总览、两篇精读样例与 arXiv Radar 已完成；候选池每日增量更新
+- 当前状态：WAM 一级领域地图、28 篇论文总览、12 项 Benchmark 与数据注册表、两篇精读样例和 arXiv Radar 已完成
 
 ## 当前目标
 
@@ -24,6 +24,7 @@ World Action Model（WAM）轻量知识库种子工程。
 - [WAM 范围、边界与分类](content/00-WAM范围与分类.md)
 - [WAM 一级领域地图](content/01-一级领域地图.md)
 - [WAM 论文总览](https://roboopus.github.io/wam/papers/)
+- [WAM Benchmark 与数据总览](https://roboopus.github.io/wam/benchmarks/)
 - [经典论文阅读路线](content/papers/01-经典论文阅读路线.md)
 - [2026 arXiv 前沿论文池](content/papers/02-2026-arXiv前沿论文.md)
 - [arXiv 雷达工作流](content/papers/03-arXiv雷达工作流.md)

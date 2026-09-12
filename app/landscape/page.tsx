@@ -52,7 +52,7 @@ export default function LandscapePage() {
       <section className="landscape-page-hero">
         <div className="detail-crumbs">
           <a href={`${basePath}/`}><ArrowLeft aria-hidden="true" /> 返回首页</a>
-          <span>FIELD MAP / V0.3 / 2026-09-11</span>
+          <span>FIELD MAP / V0.4 / 2026-09-12</span>
         </div>
         <div className="landscape-page-hero-grid">
           <div>

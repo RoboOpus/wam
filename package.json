@@ -7,6 +7,8 @@
   },
   "scripts": {
     "dev": "vinext dev",
+    "content:check": "node scripts/validate-content.mjs",
+    "prebuild": "npm run content:check",
     "build": "vinext build",
     "postbuild": "node scripts/prepare-github-pages.mjs",
     "papers:fetch": "node scripts/fetch-arxiv.mjs",

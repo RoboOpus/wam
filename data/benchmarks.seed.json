@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-12",
+  "notes": [
+    "This registry records comparison dimensions and primary-source links; it is not a leaderboard.",
+    "sourceLevel=primary means the record was checked against an official repository, project page, paper, or dataset page."
+  ],
+  "groups": [
+    {
+      "id": "policy-benchmarks",
+      "index": "01",
+      "title": "策略与闭环执行",
+      "description": "检查策略是否能在环境中完成任务；成功率必须连同任务、场景和协议一起阅读。",
+      "entries": [
+        {
+          "id": "libero",
+          "name": "LIBERO",
+          "kind": "Benchmark",
+          "target": "Policy / VLA",
+          "loop": "闭环仿真",
+          "setting": "桌面多任务操作",
+          "scope": "130 个任务，覆盖空间、物体、目标与 LIBERO-100 套件",
+          "modalities": ["RGB", "状态", "语言", "动作"],
+          "metrics": ["任务成功率", "迁移与持续学习"],
+          "wamValue": "适合检查 WAM 策略在任务迁移和多任务操作上的最终控制表现。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/Lifelong-Robot-Learning/LIBERO" },
+            { "label": "项目页", "url": "https://libero-project.github.io/" }
+          ]
+        },
+        {
+          "id": "calvin",
+          "name": "CALVIN",
+          "kind": "Benchmark",
+          "target": "Language-conditioned policy",
+          "loop": "闭环仿真",
+          "setting": "长时序桌面操作",
+          "scope": "连续语言指令、技能组合与不同传感配置",
+          "modalities": ["RGB", "状态", "语言", "动作"],
+          "metrics": ["连续完成任务数", "任务成功率"],
+          "wamValue": "用于观察未来预测或潜在状态是否帮助长任务链执行，而不只改善单步动作。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/mees/calvin" }
+          ]
+        },
+        {
+          "id": "rlbench",
+          "name": "RLBench",
+          "kind": "Benchmark",
+          "target": "Robot learning policy",
+          "loop": "闭环仿真",
+          "setting": "CoppeliaSim / PyRep，基准默认 Franka Panda",
+          "scope": "少样本、强化学习、模仿学习、多任务与 Sim-to-Real",
+          "modalities": ["RGB", "深度", "状态", "语言", "动作"],
+          "metrics": ["任务成功率", "任务变化泛化"],
+          "wamValue": "提供覆盖广的经典操作任务，可作为 WAM 动作头和普通策略的共同执行环境。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/stepjam/RLBench" }
+          ]
+        },
+        {
+          "id": "robotwin-2",
+          "name": "RoboTwin 2.0",
+          "kind": "Benchmark & Generator",
+          "target": "Bimanual manipulation policy",
+          "loop": "闭环仿真",
+          "setting": "SAPIEN 双臂操作与强域随机化",
+          "scope": "多任务双臂控制、数据生成和鲁棒性评测",
+          "modalities": ["RGB", "深度", "状态", "语言", "双臂动作"],
+          "metrics": ["任务成功率", "随机化鲁棒性"],
+          "wamValue": "为双臂 WAM 提供可扩展的数据生成和统一策略评测入口。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/RoboTwin-Platform/RoboTwin" },
+            { "label": "项目页", "url": "https://robotwin-platform.github.io/" }
+          ]
+        },
+        {
+          "id": "robodojo",
+          "name": "RoboDojo",
+          "kind": "Sim-to-Real Benchmark",
+          "target": "Generalist manipulation policy",
+          "loop": "仿真与真机闭环",
+          "setting": "42 个仿真任务、18 个真机任务、3 类机器人本体",
+          "scope": "泛化、记忆、精度、长时序与开放指令五个能力维度",
+          "modalities": ["RGB", "状态", "语言", "动作"],
+          "metrics": ["任务成功率", "能力维度汇总", "排行榜"],
+          "wamValue": "让 WAM 与普通 VLA 在同一仿真—真机协议下比较最终执行能力。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/RoboDojo-Benchmark/RoboDojo" },
+            { "label": "项目页", "url": "https://robodojo-benchmark.com/" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world-model-benchmarks",
+      "index": "02",
+      "title": "世界模型直接评测",
+      "description": "不只看生成视频是否逼真，还要检查预测出的未来能否转换为动作并完成任务。",
+      "entries": [
+        {
+          "id": "robowm-bench",
+          "name": "RoboWM-Bench",
+          "kind": "World Model Benchmark",
+          "target": "Robot video world model",
+          "loop": "生成视频 → IDM 动作 → 仿真执行",
+          "setting": "Isaac Lab 中的 Franka 与人手操作任务",
+          "scope": "世界模型输入、视频生成、逆动力学解码与执行评测",
+          "modalities": ["RGB", "深度", "文本", "生成视频", "动作"],
+          "metrics": ["仿真任务得分", "动作可执行性"],
+          "wamValue": "直接连接视觉未来与具身执行，避免只用视频质量代理控制能力。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/fffstrong/RoboWM-Bench" },
+            { "label": "arXiv", "url": "https://arxiv.org/abs/2604.19092" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "training-data",
+      "index": "03",
+      "title": "训练数据与跨本体资源",
+      "description": "记录数据来自何种机器人、场景和模态；数据规模不能替代覆盖范围与质量说明。",
+      "entries": [
+        {
+          "id": "droid",
+          "name": "DROID",
+          "kind": "Real-world Dataset",
+          "target": "General robot policy training",
+          "loop": "离线真实数据",
+          "setting": "76k 条示范、350 小时、564 个场景与 86 类任务",
+          "scope": "分布式采集的多场景真实机器人操作",
+          "modalities": ["多视角 RGB", "状态", "语言", "动作"],
+          "metrics": ["轨迹与场景覆盖", "下游策略泛化"],
+          "wamValue": "为联合视频—动作训练提供大规模真实交互和跨场景变化。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/droid-dataset/droid" },
+            { "label": "项目页", "url": "https://droid-dataset.github.io/" }
+          ]
+        },
+        {
+          "id": "open-x-embodiment",
+          "name": "Open X-Embodiment",
+          "kind": "Cross-embodiment Collection",
+          "target": "Cross-robot policy pretraining",
+          "loop": "离线数据集合",
+          "setting": "多数据集、多机器人本体，统一为 RLDS episode 格式",
+          "scope": "跨任务、跨本体的数据混合与 RT-X 模型入口",
+          "modalities": ["RGB", "状态", "语言", "异构动作"],
+          "metrics": ["跨本体迁移", "下游任务表现"],
+          "wamValue": "用于研究世界知识能否跨动作空间和传感配置复用。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/google-deepmind/open_x_embodiment" }
+          ]
+        },
+        {
+          "id": "bridge-data-v2",
+          "name": "BridgeData V2",
+          "kind": "Real-world Dataset",
+          "target": "General manipulation policy training",
+          "loop": "离线真实数据",
+          "setting": "多任务、多环境桌面操作",
+          "scope": "通用机器人操作预训练与目标域适配",
+          "modalities": ["RGB", "状态", "语言", "动作"],
+          "metrics": ["任务覆盖", "下游策略成功率"],
+          "wamValue": "提供真实动作轨迹，可与无动作视频或生成式未来信号组成联合训练混合。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/rail-berkeley/bridge_data_v2" },
+            { "label": "项目页", "url": "https://rail-berkeley.github.io/bridgedata/" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evaluation-infrastructure",
+      "index": "04",
+      "title": "评测与复现基础设施",
+      "description": "区分 Benchmark 本身与连接策略、数据、环境和真机的工程层。",
+      "entries": [
+        {
+          "id": "xpolicylab",
+          "name": "XPolicyLab",
+          "kind": "Policy Integration Layer",
+          "target": "Policy serving and evaluation",
+          "loop": "仿真—真机接口层",
+          "setting": "统一接入 40+ 操作策略并连接 RoboDojo、RoboTwin 与真机",
+          "scope": "策略适配、推理服务、环境通信和部署",
+          "modalities": ["图像", "状态", "语言", "动作"],
+          "metrics": ["兼容策略覆盖", "端到端执行"],
+          "wamValue": "减少每个 WAM 重复编写环境适配器，便于与已有 VLA 基线公平比较。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/XPolicyLab/XPolicyLab" }
+          ]
+        },
+        {
+          "id": "lerobot",
+          "name": "LeRobot",
+          "kind": "Robot Learning Toolchain",
+          "target": "Data, model and hardware workflow",
+          "loop": "离线训练与真机部署",
+          "setting": "统一数据格式、基线模型、训练工具和低成本硬件生态",
+          "scope": "数据处理、训练、评测和真实机器人接入",
+          "modalities": ["图像", "状态", "语言", "动作"],
+          "metrics": ["数据兼容性", "训练与部署复现"],
+          "wamValue": "可作为 WAM 数据格式、动作策略基线和真实硬件部署的通用底座。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/huggingface/lerobot" },
+            { "label": "文档", "url": "https://huggingface.co/docs/lerobot" }
+          ]
+        },
+        {
+          "id": "robomimic",
+          "name": "robomimic",
+          "kind": "Imitation Learning Framework",
+          "target": "Offline imitation learning baselines",
+          "loop": "离线训练与闭环评测",
+          "setting": "模块化数据管线、算法基线和机器人操作数据集",
+          "scope": "行为克隆、离线学习、数据处理与实验复现",
+          "modalities": ["RGB", "状态", "动作"],
+          "metrics": ["闭环任务成功率", "离线训练复现"],
+          "wamValue": "提供不含世界预测的稳健模仿学习基线，帮助判断 WAM 增益来自哪里。",
+          "status": "已核验",
+          "sourceLevel": "一级来源",
+          "sourceCheckedAt": "2026-09-12",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/ARISE-Initiative/robomimic" },
+            { "label": "文档", "url": "https://robomimic.github.io/" }
+          ]
+        }
+      ]
+    }
+  ]
+}

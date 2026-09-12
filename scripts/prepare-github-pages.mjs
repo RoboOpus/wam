@@ -29,7 +29,7 @@ function makeStaticHtml(sourcePath, targetPath = sourcePath) {
 makeStaticHtml(join(outputRoot, 'index.html'));
 makeStaticHtml(join(outputRoot, '404.html'));
 
-for (const route of ['landscape', 'papers', 'radar', 'papers/dreamzero', 'papers/fast-wam']) {
+for (const route of ['landscape', 'papers', 'benchmarks', 'radar', 'papers/dreamzero', 'papers/fast-wam']) {
   const routeFile = join(outputRoot, `${route}.html`);
   if (!existsSync(routeFile)) {
     throw new Error(`Static route was not generated: ${route}`);

@@ -224,6 +224,13 @@ export const landscapeSections: LandscapeSection[] = [
     description: '区分策略评测、世界模型评测、训练数据与评测基础设施。',
     entries: [
       {
+        title: 'WAM Benchmark 与数据总览',
+        kind: '结构索引',
+        status: '已编目',
+        note: '12 个已核验入口，按评测对象、闭环、场景、模态、指标与来源统一记录。',
+        href: '/wam/benchmarks/',
+      },
+      {
         title: 'LIBERO',
         kind: 'Benchmark',
         status: '已索引',
