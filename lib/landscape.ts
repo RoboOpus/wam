@@ -173,6 +173,13 @@ export const landscapeSections: LandscapeSection[] = [
     description: '经典路线、近期候选和已核验精读分层管理。',
     entries: [
       {
+        title: 'WAM 论文总览',
+        kind: '结构索引',
+        status: '已编目',
+        note: '28 篇已核验种子，按基础、级联、联合、效率前沿与综述分组。',
+        href: '/wam/papers/',
+      },
+      {
         title: '经典论文阅读路线',
         kind: '路线图',
         status: '已编目',
