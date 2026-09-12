@@ -8,6 +8,8 @@ const OUTPUT_PATH = resolve(process.cwd(), 'data', 'arxiv', 'papers.json');
 const MAX_RESULTS = readNumberArgument('--max-results', 60);
 const POOL_LIMIT = readNumberArgument('--pool-limit', 24);
 const MIN_RELEVANCE = readNumberArgument('--min-relevance', 7);
+const FETCH_ATTEMPTS = readNumberArgument('--fetch-attempts', 4);
+const RETRYABLE_STATUS = new Set([408, 425, 429]);
 
 function readNumberArgument(name, fallback) {
   const prefix = `${name}=`;
@@ -36,6 +38,55 @@ function decodeXml(value) {
     .replace(/&(amp|lt|gt|quot|apos);/g, (entity) => named[entity])
     .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
     .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(Number.parseInt(code, 16)));
+}
+
+function retryDelay(response, attempt) {
+  const retryAfter = Number(response?.headers.get('retry-after'));
+  if (Number.isFinite(retryAfter) && retryAfter > 0) {
+    return Math.min(retryAfter * 1_000, 30_000);
+  }
+  return Math.min(5_000 * 2 ** (attempt - 1), 30_000);
+}
+
+async function fetchFeed(url) {
+  let lastError;
+
+  for (let attempt = 1; attempt <= FETCH_ATTEMPTS; attempt += 1) {
+    let response;
+
+    try {
+      response = await fetch(url, {
+        headers: {
+          Accept: 'application/atom+xml',
+          'User-Agent': 'RoboOpus-WAM/0.2 (https://github.com/RoboOpus/wam)',
+        },
+        signal: AbortSignal.timeout(45_000),
+      });
+    } catch (error) {
+      lastError = error;
+    }
+
+    if (response?.ok) return response.text();
+
+    if (response) {
+      const retryable = RETRYABLE_STATUS.has(response.status) || response.status >= 500;
+      const error = new Error(`arXiv API returned ${response.status} ${response.statusText}.`);
+      if (!retryable) throw error;
+      lastError = error;
+    }
+
+    if (attempt === FETCH_ATTEMPTS) break;
+
+    const delay = retryDelay(response, attempt);
+    console.warn(
+      `arXiv request attempt ${attempt}/${FETCH_ATTEMPTS} failed; retrying in ${delay / 1_000}s.`,
+    );
+    await new Promise((resolveDelay) => setTimeout(resolveDelay, delay));
+  }
+
+  throw new Error(
+    `arXiv request failed after ${FETCH_ATTEMPTS} attempts: ${lastError?.message ?? 'unknown error'}`,
+  );
 }
 
 function tag(entry, name) {
@@ -145,19 +196,7 @@ queryUrl.search = new URLSearchParams({
   sortOrder: 'descending',
 }).toString();
 
-const response = await fetch(queryUrl, {
-  headers: {
-    Accept: 'application/atom+xml',
-    'User-Agent': 'RoboOpus-WAM/0.2 (https://github.com/RoboOpus/wam)',
-  },
-  signal: AbortSignal.timeout(45_000),
-});
-
-if (!response.ok) {
-  throw new Error(`arXiv API returned ${response.status} ${response.statusText}.`);
-}
-
-const parsed = parseEntries(await response.text());
+const parsed = parseEntries(await fetchFeed(queryUrl));
 if (parsed.length === 0) {
   throw new Error('arXiv returned no entries; refusing to replace the current candidate pool.');
 }
