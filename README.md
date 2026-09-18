@@ -50,9 +50,14 @@ npm run papers:fetch
 ```bash
 npm run lint
 npm run build
+npm test
 ```
 
 `vinext build` 使用 `output: "export"` 生成纯静态站到 `dist/client/`，随后 `postbuild` 会整理 `/wam` 静态资源和目录路由。推送到 `main` 后，GitHub Actions 会把该目录部署为 `/wam/` 项目站。
+
+构建同时导出 `/wam/data/search-index.json`，供 [Atlas 跨站检索](https://roboopus.github.io/atlas/search/?origin=wam) 使用：28 篇论文（其中 2 篇正文替代对应目录条目）、10 个地图板块、12 个 Benchmark 和非重复雷达候选。正文索引包含本站原创分析、作者报告标签与局限，不下载论文全文或私密材料。索引生成时间不冒充来源核对日期；缺少逐条日期的目录/正文保留 `null`。
+
+`source_revision` 记录导出时仓库 HEAD。正式部署来自对应提交；本地有未提交修改时仅代表基线提交，不作为发布证据。每日采集工作流在提交新数据后重新导出索引，确保上线版本指向此次数据提交。`npm test` 应在构建之后执行，校验全部导出链接的页面和定位锚点。
 
 `Refresh arXiv Radar` 工作流每天北京时间 08:00 运行。只有候选数据发生变化时才提交并重新部署；所有新条目默认标记为 `candidate`，不会自动升级为已核验知识。
 

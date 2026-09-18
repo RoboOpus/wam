@@ -68,7 +68,7 @@ export default function PapersPage() {
             </header>
             <div className="catalog-list">
               {group.papers.map((paper) => (
-                <article className="catalog-row" key={paper.id}>
+                <article className="catalog-row" id={`paper-${paper.id}`} key={paper.id}>
                   <time>{paper.year}</time>
                   <div className="catalog-paper-title">
                     <span>{paper.shortTitle}</span>

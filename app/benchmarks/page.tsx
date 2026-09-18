@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 function RegistryCard({ entry }: { entry: BenchmarkEntry }) {
   return (
-    <article className="registry-card">
+    <article className="registry-card" id={`benchmark-${entry.id}`}>
       <div className="registry-card-meta">
         <span>{entry.kind}</span>
         <span><CircleDot aria-hidden="true" /> {entry.status}</span>

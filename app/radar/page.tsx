@@ -47,7 +47,7 @@ export default function RadarPage() {
 
         <div className="radar-list">
           {radarPapers.map((paper, index) => (
-            <article className="radar-row" key={paper.id}>
+            <article className="radar-row" id={`paper-${paper.id}`} key={paper.id}>
               <div className="radar-rank">
                 <span>{String(index + 1).padStart(2, '0')}</span>
                 <strong>{paper.relevanceScore}</strong>

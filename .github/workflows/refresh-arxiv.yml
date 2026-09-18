@@ -68,6 +68,12 @@ jobs:
           git commit -m "chore(radar): refresh arXiv candidates"
           git push
 
+      - name: Finalize index provenance and verify search
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          node --experimental-strip-types scripts/build-search-index.mjs
+          npm test
+
       - name: Upload Pages artifact
         if: steps.changes.outputs.changed == 'true'
         uses: actions/upload-pages-artifact@v3
