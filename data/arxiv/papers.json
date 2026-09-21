@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T02:22:51.820Z",
+  "generatedAt": "2026-09-21T02:31:31.009Z",
   "source": {
     "endpoint": "https://export.arxiv.org/api/query",
     "query": "(cat:cs.RO OR cat:cs.AI OR cat:cs.CV OR cat:cs.LG) AND (all:\"world action model\" OR all:\"vision language action\" OR all:\"robot world model\" OR (all:\"world model\" AND all:robot))",
@@ -127,6 +127,33 @@
       "firstSeen": "2026-09-11T09:23:39.600Z"
     },
     {
+      "id": "2609.21983",
+      "title": "SkelWAM: A Skeleton-Guided World-Action Model for Zero-Shot Cross-Embodiment Manipulation",
+      "authors": [
+        "Pengjun Niu",
+        "Yujia Xie",
+        "Rui Peng",
+        "Hang Zhao",
+        "Ke Liu"
+      ],
+      "published": "2026-09-18T16:44:42Z",
+      "updated": "2026-09-18T16:44:42Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "url": "https://arxiv.org/abs/2609.21983v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.21983v1",
+      "matchedTerms": [
+        "world action model",
+        "manipulation",
+        "embodied"
+      ],
+      "relevanceScore": 25,
+      "status": "candidate",
+      "firstSeen": "2026-09-21T02:31:31.009Z"
+    },
+    {
       "id": "2609.19613",
       "title": "TacSushi: Tactile-Grounded World-Action Modeling for Dexterous Sushi Manipulation",
       "authors": [
@@ -226,6 +253,38 @@
       "relevanceScore": 25,
       "status": "candidate",
       "firstSeen": "2026-09-11T09:23:39.600Z"
+    },
+    {
+      "id": "2609.21514",
+      "title": "Skel-WAM: A Hand-Skeleton-Conditioned World Action Model for Human-to-Robot Manipulation Transfer",
+      "authors": [
+        "Zetao Cai",
+        "Yaping Li",
+        "Yiqun Wang",
+        "Xinyu Zhan",
+        "Yuyin Yang",
+        "Haoxiang Ma",
+        "Kailin Li",
+        "Tao Lu",
+        "Jiangmiao Pang",
+        "Linning Xu",
+        "Dahua Lin"
+      ],
+      "published": "2026-09-18T09:06:15Z",
+      "updated": "2026-09-18T09:06:15Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "url": "https://arxiv.org/abs/2609.21514v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.21514v1",
+      "matchedTerms": [
+        "world action model",
+        "manipulation"
+      ],
+      "relevanceScore": 23,
+      "status": "candidate",
+      "firstSeen": "2026-09-21T02:31:31.009Z"
     },
     {
       "id": "2609.20709",
@@ -433,6 +492,31 @@
       "firstSeen": "2026-09-11T09:23:39.600Z"
     },
     {
+      "id": "2609.20980",
+      "title": "ForeTac-VLA: A Forecasting-Based Tactile-Vision-Language-Action Model for Contact-Rich Robotic Manipulation",
+      "authors": [
+        "Zhengyu Tao",
+        "Xin Li",
+        "Xin Wang"
+      ],
+      "published": "2026-09-17T18:33:40Z",
+      "updated": "2026-09-17T18:33:40Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "url": "https://arxiv.org/abs/2609.20980v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.20980v1",
+      "matchedTerms": [
+        "vision-language-action",
+        "manipulation",
+        "action generation"
+      ],
+      "relevanceScore": 22,
+      "status": "candidate",
+      "firstSeen": "2026-09-21T02:31:31.009Z"
+    },
+    {
       "id": "2609.18242",
       "title": "ForceDelta-VLA: Distilling Force-Conditioned ActionCorrections for Contact-Rich Manipulation",
       "authors": [
@@ -528,6 +612,39 @@
       "relevanceScore": 22,
       "status": "candidate",
       "firstSeen": "2026-09-11T09:23:39.600Z"
+    },
+    {
+      "id": "2609.21449",
+      "title": "ME-Dex 1.0: Bringing Heterogeneous Tactile Sensing into World Action Modeling",
+      "authors": [
+        "Xuancheng Zhang",
+        "Xuetao Liu",
+        "Qianying Tang",
+        "Jizhe Wang",
+        "Zhijing Cheng",
+        "Bochen Lin",
+        "Haoran Wen",
+        "Ming Li",
+        "Kun Zhan",
+        "Yu Liu"
+      ],
+      "published": "2026-09-18T08:00:06Z",
+      "updated": "2026-09-18T08:00:06Z",
+      "primaryCategory": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "url": "https://arxiv.org/abs/2609.21449v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.21449v1",
+      "matchedTerms": [
+        "world action model",
+        "manipulation",
+        "embodied",
+        "action generation"
+      ],
+      "relevanceScore": 21,
+      "status": "candidate",
+      "firstSeen": "2026-09-21T02:31:31.009Z"
     },
     {
       "id": "2609.20761",
@@ -719,130 +836,6 @@
       "relevanceScore": 21,
       "status": "candidate",
       "firstSeen": "2026-09-11T09:23:39.600Z"
-    },
-    {
-      "id": "2609.11561",
-      "title": "Memory as Plans: World-Action Modeling with Memory-Grounded Planning",
-      "authors": [
-        "Sizhe Zhao",
-        "Haozhe Xie",
-        "Weiyu Zhao",
-        "Chenchu Zhang",
-        "Huan Wang",
-        "Chenyang Wang",
-        "Qinglin Liu",
-        "Shengping Zhang"
-      ],
-      "published": "2026-09-10T13:52:51Z",
-      "updated": "2026-09-10T13:52:51Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO"
-      ],
-      "url": "https://arxiv.org/abs/2609.11561v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.11561v1",
-      "matchedTerms": [
-        "world action model",
-        "manipulation"
-      ],
-      "relevanceScore": 21,
-      "status": "candidate",
-      "firstSeen": "2026-09-11T09:23:39.600Z"
-    },
-    {
-      "id": "2609.06578",
-      "title": "Learning to Use Imagination: Progress-Conditioned Future Utilization for World Action Models",
-      "authors": [
-        "Yijie Zhu",
-        "Zitong Yu",
-        "Wei Li",
-        "Hui Ma",
-        "Wen Li",
-        "Rui Shao",
-        "Liqiang Nie"
-      ],
-      "published": "2026-09-06T12:46:20Z",
-      "updated": "2026-09-06T12:46:20Z",
-      "primaryCategory": "cs.CV",
-      "categories": [
-        "cs.CV"
-      ],
-      "url": "https://arxiv.org/abs/2609.06578v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.06578v1",
-      "matchedTerms": [
-        "world action model",
-        "vision-language-action",
-        "action generation"
-      ],
-      "relevanceScore": 21,
-      "status": "candidate",
-      "firstSeen": "2026-09-11T09:23:39.600Z"
-    },
-    {
-      "id": "2609.20776",
-      "title": "GeoAAC: Geometry-Based Adaptive Action Chunking from Denoising Trajectories in VLA Policies",
-      "authors": [
-        "Xin Chen",
-        "Sen Chen",
-        "Yujuan Ding",
-        "Jian Liu",
-        "Guoqing Wang",
-        "Wei Ye",
-        "Heng Tao Shen",
-        "Yi Bin"
-      ],
-      "published": "2026-09-17T17:48:07Z",
-      "updated": "2026-09-17T17:48:07Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "url": "https://arxiv.org/abs/2609.20776v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.20776v1",
-      "matchedTerms": [
-        "vision-language-action",
-        "manipulation",
-        "action generation"
-      ],
-      "relevanceScore": 20,
-      "status": "candidate",
-      "firstSeen": "2026-09-18T02:22:51.820Z"
-    },
-    {
-      "id": "2609.20659",
-      "title": "HIL-UMI: Bringing Human-in-the-Loop Post-Training of Vision-Language-Action Models to Universal Manipulation Interface",
-      "authors": [
-        "Zimu Han",
-        "Yiming Zeng",
-        "Jiyao Zhang",
-        "Zihao Zhao",
-        "Yuanfei Wang",
-        "Yixiang Jin",
-        "Shiqi Li",
-        "Shuangben Chen",
-        "Wei Huang",
-        "Ruodai Li",
-        "Hui Shen",
-        "Hao Dong"
-      ],
-      "published": "2026-09-17T16:38:37Z",
-      "updated": "2026-09-17T16:38:37Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "url": "https://arxiv.org/abs/2609.20659v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.20659v1",
-      "matchedTerms": [
-        "vision-language-action",
-        "manipulation"
-      ],
-      "relevanceScore": 20,
-      "status": "candidate",
-      "firstSeen": "2026-09-18T02:22:51.820Z"
     }
   ]
 }
