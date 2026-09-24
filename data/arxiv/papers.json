@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T02:31:31.009Z",
+  "generatedAt": "2026-09-24T02:22:59.321Z",
   "source": {
     "endpoint": "https://export.arxiv.org/api/query",
     "query": "(cat:cs.RO OR cat:cs.AI OR cat:cs.CV OR cat:cs.LG) AND (all:\"world action model\" OR all:\"vision language action\" OR all:\"robot world model\" OR (all:\"world model\" AND all:robot))",
@@ -54,6 +54,71 @@
       "relevanceScore": 33,
       "status": "candidate",
       "firstSeen": "2026-09-16T02:31:47.818Z"
+    },
+    {
+      "id": "2609.24976",
+      "title": "DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation",
+      "authors": [
+        "Haoran Yuan",
+        "Zekai Wang",
+        "Boning Shao",
+        "Haoran Lu",
+        "Trevor Darrell",
+        "Ismini Lourentzou",
+        "Wei Zhan"
+      ],
+      "published": "2026-09-21T17:55:24Z",
+      "updated": "2026-09-21T17:55:24Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "url": "https://arxiv.org/abs/2609.24976v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.24976v1",
+      "matchedTerms": [
+        "world action model",
+        "video world model",
+        "manipulation",
+        "action generation"
+      ],
+      "relevanceScore": 28,
+      "status": "candidate",
+      "firstSeen": "2026-09-24T02:22:59.321Z"
+    },
+    {
+      "id": "2609.23578",
+      "title": "AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation",
+      "authors": [
+        "Yicheng Jiang",
+        "Zesen Gan",
+        "Xiaobo Wang",
+        "Tianlun He",
+        "Chenxu Zhao",
+        "Minghui Wu",
+        "Xinyue Wang",
+        "Jiaxu Wang",
+        "Junhao He",
+        "Jianan Wang",
+        "Qiming Shao"
+      ],
+      "published": "2026-09-20T11:55:26Z",
+      "updated": "2026-09-20T11:55:26Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "url": "https://arxiv.org/abs/2609.23578v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.23578v1",
+      "matchedTerms": [
+        "world action model",
+        "vision-language-action",
+        "manipulation"
+      ],
+      "relevanceScore": 27,
+      "status": "candidate",
+      "firstSeen": "2026-09-24T02:22:59.321Z"
     },
     {
       "id": "2609.19600",
@@ -253,6 +318,202 @@
       "relevanceScore": 25,
       "status": "candidate",
       "firstSeen": "2026-09-11T09:23:39.600Z"
+    },
+    {
+      "id": "2609.25627",
+      "title": "MachEmbodied-U0: Unified Understanding and Generation Model for Embodied Intelligence",
+      "authors": [
+        "Haoran Wen",
+        "Wenfu Wang",
+        "Kunsong Shi",
+        "Jingke Wang",
+        "Wancheng Feng",
+        "Yiren Zhang",
+        "Yueran Zhao",
+        "Xuancheng Zhang",
+        "Nanfei Ye",
+        "Xingru Chen",
+        "Zhaohong Sun",
+        "Chengmin Yang",
+        "Zikang Yu",
+        "Penghao Bi",
+        "Jia Shi",
+        "Yu Liu",
+        "Kun Zhan",
+        "Yan Xie"
+      ],
+      "published": "2026-09-22T03:36:36Z",
+      "updated": "2026-09-22T03:36:36Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "url": "https://arxiv.org/abs/2609.25627v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.25627v1",
+      "matchedTerms": [
+        "world action model",
+        "vision-language-action",
+        "manipulation",
+        "embodied",
+        "action generation"
+      ],
+      "relevanceScore": 24,
+      "status": "candidate",
+      "firstSeen": "2026-09-24T02:22:59.321Z"
+    },
+    {
+      "id": "2609.28256",
+      "title": "MemBodied: Recurrent Associative Memory for Vision-Language-Action Models",
+      "authors": [
+        "Tej Deep Pala",
+        "Navonil Majumder",
+        "Bryce Goh",
+        "Raphael Yee",
+        "Jianfei Yang",
+        "Liming Chen",
+        "Soujanya Poria"
+      ],
+      "published": "2026-09-23T15:19:19Z",
+      "updated": "2026-09-23T15:19:19Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "url": "https://arxiv.org/abs/2609.28256v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.28256v1",
+      "matchedTerms": [
+        "vision-language-action",
+        "manipulation",
+        "embodied",
+        "action generation"
+      ],
+      "relevanceScore": 23,
+      "status": "candidate",
+      "firstSeen": "2026-09-24T02:22:59.321Z"
+    },
+    {
+      "id": "2609.27455",
+      "title": "Latent evolving World Action Model",
+      "authors": [
+        "Xueji Fang",
+        "Boqiang Duan",
+        "Hua Wu",
+        "Jingdong Wang",
+        "Guo-Jun Qi"
+      ],
+      "published": "2026-09-23T07:22:43Z",
+      "updated": "2026-09-23T07:22:43Z",
+      "primaryCategory": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "url": "https://arxiv.org/abs/2609.27455v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.27455v1",
+      "matchedTerms": [
+        "world action model",
+        "manipulation",
+        "action generation"
+      ],
+      "relevanceScore": 23,
+      "status": "candidate",
+      "firstSeen": "2026-09-24T02:22:59.321Z"
+    },
+    {
+      "id": "2609.25562",
+      "title": "IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models",
+      "authors": [
+        "Yiqi Wang",
+        "Zhifeng Rao",
+        "Jiaqi Zhang",
+        "Xiaoyang Li",
+        "Zhangkai Wu",
+        "Yiqun Duan",
+        "Mingkai Zheng",
+        "Fei Wang",
+        "Shan You",
+        "Taotao Cai"
+      ],
+      "published": "2026-09-22T01:51:09Z",
+      "updated": "2026-09-22T01:51:09Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "url": "https://arxiv.org/abs/2609.25562v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.25562v1",
+      "matchedTerms": [
+        "world action model",
+        "vision-language-action",
+        "manipulation",
+        "action generation"
+      ],
+      "relevanceScore": 23,
+      "status": "candidate",
+      "firstSeen": "2026-09-24T02:22:59.321Z"
+    },
+    {
+      "id": "2609.24868",
+      "title": "DualWAM: Dual-System World Action Models for Asynchronous Global Planning and Local Refinement",
+      "authors": [
+        "Yixin Zheng",
+        "Jiangran Lyu",
+        "Yuntian Deng",
+        "Kai Liu",
+        "Yizhou Zhou",
+        "Yizhou Wang",
+        "Xiaoguang Zhao",
+        "He Wang",
+        "Zhizheng Zhang"
+      ],
+      "published": "2026-09-21T16:37:50Z",
+      "updated": "2026-09-21T16:37:50Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "url": "https://arxiv.org/abs/2609.24868v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.24868v1",
+      "matchedTerms": [
+        "world action model",
+        "manipulation",
+        "action generation"
+      ],
+      "relevanceScore": 23,
+      "status": "candidate",
+      "firstSeen": "2026-09-24T02:22:59.321Z"
+    },
+    {
+      "id": "2609.23888",
+      "title": "HapticWAM: Distilling Imagined Touch into a World-Action Model without Inference-Time Tactile Sensing",
+      "authors": [
+        "Mikhail Sannikov",
+        "Ilya Mikhalchuk",
+        "Konstantin Gubernatorov",
+        "Petr Kovalev",
+        "Ogunwoye Faith Oluwatobi",
+        "Dzmitry Tsetserukou"
+      ],
+      "published": "2026-09-20T21:49:50Z",
+      "updated": "2026-09-20T21:49:50Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "url": "https://arxiv.org/abs/2609.23888v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.23888v1",
+      "matchedTerms": [
+        "world action model",
+        "manipulation",
+        "action generation"
+      ],
+      "relevanceScore": 23,
+      "status": "candidate",
+      "firstSeen": "2026-09-24T02:22:59.321Z"
     },
     {
       "id": "2609.21514",
@@ -492,6 +753,61 @@
       "firstSeen": "2026-09-11T09:23:39.600Z"
     },
     {
+      "id": "2609.26467",
+      "title": "RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy",
+      "authors": [
+        "Chongyu Zhu",
+        "Jaden Hinds",
+        "Hyegang Kim",
+        "Juan Sebastian Rojas",
+        "Ramy Elmallah",
+        "Chi-Guhn Lee"
+      ],
+      "published": "2026-09-22T14:15:28Z",
+      "updated": "2026-09-22T14:15:28Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "url": "https://arxiv.org/abs/2609.26467v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.26467v1",
+      "matchedTerms": [
+        "vision-language-action",
+        "manipulation",
+        "action generation"
+      ],
+      "relevanceScore": 22,
+      "status": "candidate",
+      "firstSeen": "2026-09-24T02:22:59.321Z"
+    },
+    {
+      "id": "2609.25756",
+      "title": "MedVLA: A Hierarchical Vision-Language-Action Framework for Closed-Loop Precision Medical Robot Manipulation",
+      "authors": [
+        "Junjie Xie",
+        "Chuxuan He",
+        "Angen Ye",
+        "Yujia Song",
+        "Dapeng Zhang"
+      ],
+      "published": "2026-09-22T06:50:10Z",
+      "updated": "2026-09-22T06:50:10Z",
+      "primaryCategory": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "url": "https://arxiv.org/abs/2609.25756v1",
+      "pdfUrl": "https://arxiv.org/pdf/2609.25756v1",
+      "matchedTerms": [
+        "vision-language-action",
+        "manipulation",
+        "action generation"
+      ],
+      "relevanceScore": 22,
+      "status": "candidate",
+      "firstSeen": "2026-09-24T02:22:59.321Z"
+    },
+    {
       "id": "2609.20980",
       "title": "ForeTac-VLA: A Forecasting-Based Tactile-Vision-Language-Action Model for Contact-Rich Robotic Manipulation",
       "authors": [
@@ -515,327 +831,6 @@
       "relevanceScore": 22,
       "status": "candidate",
       "firstSeen": "2026-09-21T02:31:31.009Z"
-    },
-    {
-      "id": "2609.18242",
-      "title": "ForceDelta-VLA: Distilling Force-Conditioned ActionCorrections for Contact-Rich Manipulation",
-      "authors": [
-        "Ju Dong",
-        "Yu Fu",
-        "Jian Chen",
-        "Yimeng Liu",
-        "Haocheng Zhao",
-        "Lei Zhang",
-        "Kaixin Bai",
-        "Liding Zhang",
-        "Diwen Zheng",
-        "Alois Christian Knoll",
-        "Angela P. Schoellig",
-        "Jianwei Zhang"
-      ],
-      "published": "2026-09-16T07:20:10Z",
-      "updated": "2026-09-16T07:20:10Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO"
-      ],
-      "url": "https://arxiv.org/abs/2609.18242v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.18242v1",
-      "matchedTerms": [
-        "vision-language-action",
-        "manipulation",
-        "action generation"
-      ],
-      "relevanceScore": 22,
-      "status": "candidate",
-      "firstSeen": "2026-09-17T02:35:48.119Z"
-    },
-    {
-      "id": "2609.09119",
-      "title": "DeCAL: Towards Physically-Grounded Dexterous Vision-Language-Action Models via Contact-Aware Latent Co-Imagination",
-      "authors": [
-        "Yankai Fu",
-        "Ning Chen",
-        "Junkai Zhao",
-        "Heng Zhang",
-        "Guocai Yao",
-        "Pengwei Wang",
-        "Zhongyuan Wang",
-        "Shanghang Zhang"
-      ],
-      "published": "2026-09-08T17:47:43Z",
-      "updated": "2026-09-08T17:47:43Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "url": "https://arxiv.org/abs/2609.09119v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.09119v1",
-      "matchedTerms": [
-        "vision-language-action",
-        "manipulation",
-        "action generation"
-      ],
-      "relevanceScore": 22,
-      "status": "candidate",
-      "firstSeen": "2026-09-11T09:23:39.600Z"
-    },
-    {
-      "id": "2609.03889",
-      "title": "FWBC-VLA: Force-Aware Whole-Body Compensation for Contact-Rich Loco-Manipulation",
-      "authors": [
-        "Yutian Zhang",
-        "Siyuan Ma",
-        "Liwen Yang",
-        "Yang Li",
-        "Ce Hao",
-        "Haozhen Chi",
-        "Dong Wei",
-        "Qiaojun Yu",
-        "Dibo Hou"
-      ],
-      "published": "2026-09-03T14:10:47Z",
-      "updated": "2026-09-04T04:51:57Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "url": "https://arxiv.org/abs/2609.03889v2",
-      "pdfUrl": "https://arxiv.org/pdf/2609.03889v2",
-      "matchedTerms": [
-        "vision-language-action",
-        "manipulation",
-        "action generation"
-      ],
-      "relevanceScore": 22,
-      "status": "candidate",
-      "firstSeen": "2026-09-11T09:23:39.600Z"
-    },
-    {
-      "id": "2609.21449",
-      "title": "ME-Dex 1.0: Bringing Heterogeneous Tactile Sensing into World Action Modeling",
-      "authors": [
-        "Xuancheng Zhang",
-        "Xuetao Liu",
-        "Qianying Tang",
-        "Jizhe Wang",
-        "Zhijing Cheng",
-        "Bochen Lin",
-        "Haoran Wen",
-        "Ming Li",
-        "Kun Zhan",
-        "Yu Liu"
-      ],
-      "published": "2026-09-18T08:00:06Z",
-      "updated": "2026-09-18T08:00:06Z",
-      "primaryCategory": "cs.CV",
-      "categories": [
-        "cs.CV"
-      ],
-      "url": "https://arxiv.org/abs/2609.21449v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.21449v1",
-      "matchedTerms": [
-        "world action model",
-        "manipulation",
-        "embodied",
-        "action generation"
-      ],
-      "relevanceScore": 21,
-      "status": "candidate",
-      "firstSeen": "2026-09-21T02:31:31.009Z"
-    },
-    {
-      "id": "2609.20761",
-      "title": "Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control",
-      "authors": [
-        "Hanchu Zhou",
-        "Brendan Lynch",
-        "Raman Goyal",
-        "Dechen Gao",
-        "Begum Kasap",
-        "Boqi Zhao",
-        "Junshan Zhang"
-      ],
-      "published": "2026-09-17T17:43:51Z",
-      "updated": "2026-09-17T17:43:51Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO",
-        "cs.LG"
-      ],
-      "url": "https://arxiv.org/abs/2609.20761v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.20761v1",
-      "matchedTerms": [
-        "world action model",
-        "manipulation"
-      ],
-      "relevanceScore": 21,
-      "status": "candidate",
-      "firstSeen": "2026-09-18T02:22:51.820Z"
-    },
-    {
-      "id": "2609.18243",
-      "title": "Acting in Meters: Learning Metric Interactions for Precise Robotic Manipulation",
-      "authors": [
-        "Lijie Wang",
-        "Zheng Lu",
-        "Yiming Wang",
-        "Heyang Yu",
-        "Kenghou Hoi",
-        "Bowen Hu",
-        "Di Cui",
-        "Tianyu Xin",
-        "Haoran Liao",
-        "Wanqi Zhong",
-        "Xingjie Fan",
-        "Yizhao Xu",
-        "Ziliang Wang",
-        "Fei Gao",
-        "Yiming Li"
-      ],
-      "published": "2026-09-16T07:20:18Z",
-      "updated": "2026-09-16T07:20:18Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO",
-        "cs.LG"
-      ],
-      "url": "https://arxiv.org/abs/2609.18243v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.18243v1",
-      "matchedTerms": [
-        "world action model",
-        "vision-language-action",
-        "manipulation"
-      ],
-      "relevanceScore": 21,
-      "status": "candidate",
-      "firstSeen": "2026-09-17T02:35:48.119Z"
-    },
-    {
-      "id": "2609.18016",
-      "title": "Causal-History Test-Time Scaling for Failure Recovery in Autoregressive World-Action Models",
-      "authors": [
-        "Lin Li",
-        "Long Chen",
-        "Kwunhang",
-        "Wong",
-        "Jiaming Lei",
-        "Song Jin",
-        "Shucheng Du",
-        "Chuhan Zhang",
-        "Songchen Ma",
-        "Weihao Zhang",
-        "Jun Xiao",
-        "Kwang-Ting",
-        "Cheng"
-      ],
-      "published": "2026-09-16T02:08:56Z",
-      "updated": "2026-09-16T02:08:56Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO"
-      ],
-      "url": "https://arxiv.org/abs/2609.18016v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.18016v1",
-      "matchedTerms": [
-        "world action model",
-        "manipulation"
-      ],
-      "relevanceScore": 21,
-      "status": "candidate",
-      "firstSeen": "2026-09-17T02:35:48.119Z"
-    },
-    {
-      "id": "2609.17524",
-      "title": "Modality-Autoregressive World-Action Models",
-      "authors": [
-        "Adam Hung",
-        "Bardienus P. Duisterhof",
-        "Deva Ramanan",
-        "Jeffrey Ichnowski"
-      ],
-      "published": "2026-09-15T17:56:24Z",
-      "updated": "2026-09-15T17:56:24Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO"
-      ],
-      "url": "https://arxiv.org/abs/2609.17524v1",
-      "pdfUrl": "https://arxiv.org/pdf/2609.17524v1",
-      "matchedTerms": [
-        "world action model",
-        "manipulation"
-      ],
-      "relevanceScore": 21,
-      "status": "candidate",
-      "firstSeen": "2026-09-16T02:31:47.818Z"
-    },
-    {
-      "id": "2609.15570",
-      "title": "DIDO: Distilling Interaction-Centric Dynamics into One-Step Denoising for World Action Models",
-      "authors": [
-        "Jing Lyu",
-        "Shuanghao Bai",
-        "Runze Xiao",
-        "Zhenyu Liao",
-        "Wenxing Tan",
-        "Zihan Tang",
-        "Ruochuan Shi",
-        "Cheng Peng",
-        "Yuheng Ji",
-        "Yihao Wang",
-        "Badong Chen",
-        "Pengwei Wang",
-        "Zhongyuan Wang",
-        "Xiaoguang Zhao"
-      ],
-      "published": "2026-09-14T13:46:57Z",
-      "updated": "2026-09-15T05:54:35Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO"
-      ],
-      "url": "https://arxiv.org/abs/2609.15570v2",
-      "pdfUrl": "https://arxiv.org/pdf/2609.15570v2",
-      "matchedTerms": [
-        "world action model",
-        "manipulation"
-      ],
-      "relevanceScore": 21,
-      "status": "candidate",
-      "firstSeen": "2026-09-16T02:31:47.818Z"
-    },
-    {
-      "id": "2609.11697",
-      "title": "ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies",
-      "authors": [
-        "Jianming Ma",
-        "Rongjun Jin",
-        "Xiaxi Si",
-        "Yang Zhang",
-        "Yiheng Li",
-        "Yue Gao"
-      ],
-      "published": "2026-09-10T15:21:47Z",
-      "updated": "2026-09-14T05:08:09Z",
-      "primaryCategory": "cs.RO",
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "url": "https://arxiv.org/abs/2609.11697v2",
-      "pdfUrl": "https://arxiv.org/pdf/2609.11697v2",
-      "matchedTerms": [
-        "world action model",
-        "vision-language-action",
-        "manipulation",
-        "embodied"
-      ],
-      "relevanceScore": 21,
-      "status": "candidate",
-      "firstSeen": "2026-09-11T09:23:39.600Z"
     }
   ]
 }
